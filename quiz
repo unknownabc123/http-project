@@ -1,211 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTTP Knowledge Quiz</title>
 
-    <!-- W3.CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <title>HTTP Self-Assessment Quiz</title>
 
-    <!-- Your stylesheet -->
+    <!-- Website CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- JavaScript -->
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <!-- Quiz JavaScript -->
     <script src="quiz.js" defer></script>
+
 </head>
 
-<body class="w3-light-grey">
 
-<!-- Navigation -->
+<body>
+
+
+<!-- Navigation Menu -->
+<header>
+
 <div class="w3-bar w3-blue">
 
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="index.html" class="w3-bar-item w3-button">
+        Home
+    </a>
 
-    <a href="history.html" class="w3-bar-item w3-button">History</a>
+    <a href="history.html" class="w3-bar-item w3-button">
+        History
+    </a>
 
-    <a href="modern.html" class="w3-bar-item w3-button">Modern HTTP</a>
+    <a href="modern.html" class="w3-bar-item w3-button">
+        Modern HTTP
+    </a>
 
-    <a href="concepts.html" class="w3-bar-item w3-button">Key Concepts</a>
+    <a href="concepts.html" class="w3-bar-item w3-button">
+        Key Concepts
+    </a>
 
-    <a href="quiz.html" class="w3-bar-item w3-button w3-dark-grey">Quiz</a>
+    <a href="quiz.html" class="w3-bar-item w3-button w3-dark-grey">
+        Quiz
+    </a>
 
-    <a href="references.html" class="w3-bar-item w3-button">References</a>
+    <a href="references.html" class="w3-bar-item w3-button">
+        References
+    </a>
 
-    <a href="about.html" class="w3-bar-item w3-button">About</a>
+    <a href="about.html" class="w3-bar-item w3-button">
+        About
+    </a>
 
 </div>
 
-<!-- Page Content -->
-<div class="w3-content" style="max-width:900px; margin-top:30px;">
 
-<div class="w3-card w3-white w3-padding w3-round-large">
+<h1>HTTP Self-Assessment Quiz</h1>
 
-<h1 class="w3-center">HTTP Self-Assessment Quiz</h1>
+</header>
 
-<p class="w3-center">
-Test your understanding of HTTP after reading the website.
+
+
+
+<!-- Quiz Content -->
+<main class="w3-content" style="max-width:900px; margin-top:30px;">
+
+
+<div class="card w3-card w3-padding w3-white">
+
+
+<p>
+Test your knowledge of the Hypertext Transfer Protocol (HTTP).
+Complete all questions and submit your answers to see your score.
 </p>
+
+
 
 <form id="quizForm">
 
+
+
 <!-- Question 1 -->
-<h3>1. Fill in the Blank</h3>
+
+<h3>Question 1: Fill in the Blank</h3>
 
 <p>
-HTTP stands for
+HTTP stands for __________ Transfer Protocol.
 </p>
 
-<input
+
+<input 
 type="text"
 id="q1"
 class="w3-input w3-border"
-placeholder="Type your answer here">
+placeholder="Enter your answer">
+
 
 
 <hr>
 
+
+
 <!-- Question 2 -->
-<h3>2. Multiple Choice</h3>
+
+<h3>Question 2: Multiple Choice</h3>
 
 <p>
 Who invented HTTP?
 </p>
 
-<label>
+
 <input type="radio" name="q2" value="A">
 Bill Gates
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q2" value="B">
 Tim Berners-Lee
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q2" value="C">
 Steve Jobs
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q2" value="D">
 Mark Zuckerberg
-</label>
+
+
 
 <hr>
 
+
+
+
 <!-- Question 3 -->
-<h3>3. Multiple Choice</h3>
+
+<h3>Question 3: Multiple Choice</h3>
 
 <p>
 Which HTTP version introduced multiplexing?
 </p>
 
-<label>
+
 <input type="radio" name="q3" value="A">
 HTTP/1.0
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q3" value="B">
 HTTP/1.1
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q3" value="C">
 HTTP/2
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q3" value="D">
 FTP
-</label>
+
+
 
 <hr>
 
+
+
+
 <!-- Question 4 -->
-<h3>4. Multiple Choice</h3>
+
+<h3>Question 4: Multiple Choice</h3>
 
 <p>
 Which protocol does HTTP/3 use?
 </p>
 
-<label>
+
 <input type="radio" name="q4" value="A">
 TCP
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q4" value="B">
 FTP
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q4" value="C">
 SMTP
-</label>
-
 <br>
 
-<label>
+
 <input type="radio" name="q4" value="D">
 QUIC
-</label>
+
+
 
 <hr>
+
+
+
+
 
 <!-- Question 5 -->
-<h3>5. Select ALL that apply</h3>
+
+<h3>Question 5: Select All Correct Answers</h3>
+
 
 <p>
-Which of the following are features of HTTP/2?
+Which are features of HTTP/2?
 </p>
 
-<label>
+
+
 <input type="checkbox" id="q5a">
 Multiplexing
-</label>
 
 <br>
 
-<label>
+
 <input type="checkbox" id="q5b">
 Header Compression
-</label>
 
 <br>
 
-<label>
+
 <input type="checkbox" id="q5c">
 FTP Support
-</label>
 
 <br>
 
-<label>
+
 <input type="checkbox" id="q5d">
 Built on QUIC
-</label>
+
+
 
 <hr>
 
+
+
+
+
+<!-- Buttons -->
+
 <div class="w3-center">
+
 
 <button
 type="button"
@@ -216,6 +262,8 @@ Submit Quiz
 
 </button>
 
+
+
 <button
 type="reset"
 class="w3-button w3-red w3-round"
@@ -225,22 +273,44 @@ Reset Quiz
 
 </button>
 
+
 </div>
+
+
 
 </form>
 
-<!-- Results -->
 
-<div
-id="results"
-class="w3-panel w3-margin-top"
-style="display:none;">
 
-</div>
+
+<!-- Results Display -->
+
+<div id="results" style="display:none;" class="w3-panel w3-margin-top">
 
 </div>
 
+
+
 </div>
+
+
+</main>
+
+
+
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+This is a class project for IT 3203
+</p>
+
+</footer>
+
+
 
 </body>
+
 </html>
