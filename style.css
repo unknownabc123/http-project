@@ -1,222 +1,465 @@
 /* =====================================================
-   IT 3203 - HTTP Project
-   Author: Your Name
-   Description: Main stylesheet for the website
+   IT 3203 - HTTP Evolution Project
+   Author: rene Vernon
+   Description: Main stylesheet for website styling
 ===================================================== */
 
-/* General Page Styling */
+
+/* =========================
+   General Page Styling
+========================= */
+
 body {
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+
+    background-color: #f4f6f8;
+
     color: #333;
+
     margin: 0;
+
     padding: 0;
+
     line-height: 1.6;
+
 }
 
-/* Navigation Bar */
+
+
+/* =========================
+   Navigation Menu
+========================= */
+
 .w3-bar {
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+
 }
+
 
 .w3-bar .w3-button {
+
     font-weight: bold;
-    transition: background-color 0.3s;
+
+    transition: 0.3s;
+
 }
+
 
 .w3-bar .w3-button:hover {
-    background-color: #0b5ed7 !important;
+
+    background-color: #084298 !important;
+
     color: white !important;
+
 }
 
-/* Main Content Container */
-.w3-content {
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
 
-/* Cards */
-.w3-card {
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
 
-/* Headings */
-h1 {
+/* =========================
+   Page Headers
+========================= */
+
+header h1 {
+
     color: #0d6efd;
+
     text-align: center;
-    margin-bottom: 15px;
+
+    margin-top: 25px;
+
+    margin-bottom: 25px;
+
 }
+
+
+h1 {
+
+    color: #0d6efd;
+
+    text-align: center;
+
+}
+
 
 h2 {
+
     color: #0d6efd;
-    margin-top: 25px;
+
+    margin-top: 20px;
+
 }
+
 
 h3 {
+
     color: #333;
+
 }
 
-/* Paragraphs */
+
+
+/* =========================
+   Main Content
+========================= */
+
+.w3-content {
+
+    margin-top: 30px;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+/* =========================
+   Content Cards
+   Works with your old HTML
+========================= */
+
+.card {
+
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+
+}
+
+
+
+.w3-card {
+
+    border-radius: 12px;
+
+}
+
+
+
+/* =========================
+   Text Styling
+========================= */
+
 p {
+
     font-size: 16px;
+
 }
 
-/* Images */
-img {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-}
-
-/* Lists */
-ul {
-    margin-left: 25px;
-}
 
 li {
+
     margin-bottom: 8px;
+
 }
 
-/* Links */
-a {
-    text-decoration: none;
+
+
+/* =========================
+   Images
+========================= */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+
 }
+
+
+
+/* =========================
+   Links
+========================= */
+
+a {
+
+    color: #0d6efd;
+
+    text-decoration: none;
+
+}
+
 
 a:hover {
+
     text-decoration: underline;
+
 }
 
-/* Quiz Inputs */
-input[type=text] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-}
 
-input[type=radio],
-input[type=checkbox] {
-    margin-right: 10px;
-    margin-top: 10px;
-}
 
-/* Quiz Buttons */
-button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 10px;
-    transition: transform 0.2s;
-}
+/* =========================
+   Tables
+========================= */
 
-button:hover {
-    transform: scale(1.05);
-}
-
-/* Results Box */
-#results {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #f8f9fa;
-    border: 2px solid #ddd;
-}
-
-/* Success and Error Colors */
-.correct {
-    color: green;
-    font-weight: bold;
-}
-
-.incorrect {
-    color: red;
-    font-weight: bold;
-}
-
-.pass {
-    color: green;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.fail {
-    color: red;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-/* Horizontal Lines */
-hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border: 0;
-    border-top: 1px solid #ddd;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background: #0d6efd;
-    color: white;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-/* Tables (if used later) */
 table {
+
     width: 100%;
+
     border-collapse: collapse;
+
     margin-top: 20px;
+
 }
+
+
+th {
+
+    background-color: #0d6efd;
+
+    color: white;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+
+td {
+
+    padding: 12px;
+
+}
+
 
 table,
 th,
 td {
+
     border: 1px solid #ccc;
+
 }
 
-th {
+
+
+/* =========================
+   Quiz Styling
+========================= */
+
+
+input[type=text] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+input[type=radio],
+input[type=checkbox] {
+
+    margin-right: 10px;
+
+    margin-top: 10px;
+
+}
+
+
+
+/* Quiz Buttons */
+
+button {
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin: 10px;
+
+    transition: 0.3s;
+
+}
+
+
+
+button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Quiz Results */
+
+#results {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #ddd;
+
+}
+
+
+
+.correct {
+
+    color: green;
+
+    font-weight: bold;
+
+}
+
+
+
+.incorrect {
+
+    color: red;
+
+    font-weight: bold;
+
+}
+
+
+
+.pass {
+
+    color: green;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+
+.fail {
+
+    color: red;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    text-align: center;
+
     background-color: #0d6efd;
+
     color: white;
-    padding: 10px;
+
+    padding: 15px;
+
+    margin-top: 40px;
+
 }
 
-td {
-    padding: 10px;
+
+
+/* =========================
+   Horizontal Lines
+========================= */
+
+hr {
+
+    border: 0;
+
+    border-top: 1px solid #ddd;
+
+    margin: 25px 0;
+
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+
+
+/* =========================
+   Mobile Responsive Design
+========================= */
+
+@media screen and (max-width:768px) {
+
 
     h1 {
+
         font-size: 28px;
+
     }
+
 
     h2 {
+
         font-size: 22px;
+
     }
+
 
     p {
+
         font-size: 15px;
+
     }
+
 
     button {
+
         width: 100%;
+
         margin-top: 10px;
+
     }
 
+
     .w3-bar .w3-button {
+
         display: block;
+
         width: 100%;
+
         text-align: left;
+
     }
+
+
 }
