@@ -1,58 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Key Concepts - HTTP Evolution</title>
+
+    <!-- Website stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
 </head>
+
 
 <body>
 
-<header>
-    <h1>Web Concepts</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="history.html">History</a>
-        <a href="modern.html">Modern</a>
-        <a href="concepts.html">Concepts</a>
-        <a href="references.html">References</a>
-        <a href="about.html">About</a>
-    </nav>
+<!-- Navigation Menu -->
+<header>
+
+    <div class="w3-bar w3-blue">
+
+        <a href="index.html" class="w3-bar-item w3-button">
+            Home
+        </a>
+
+        <a href="history.html" class="w3-bar-item w3-button">
+            History
+        </a>
+
+        <a href="modern.html" class="w3-bar-item w3-button">
+            Modern HTTP
+        </a>
+
+        <a href="concepts.html" class="w3-bar-item w3-button w3-dark-grey">
+            Key Concepts
+        </a>
+
+        <a href="quiz.html" class="w3-bar-item w3-button">
+            Quiz
+        </a>
+
+        <a href="references.html" class="w3-bar-item w3-button">
+            References
+        </a>
+
+        <a href="about.html" class="w3-bar-item w3-button">
+            About
+        </a>
+
+    </div>
+
+
+    <h1>HTTP Key Concepts</h1>
+
 </header>
 
-<main>
 
-<div class="card">
-    <h2>Core Concepts</h2>
 
-    <p>HTML, CSS, and JavaScript are the foundation of web development.</p>
+<!-- Main Content -->
+<main class="w3-content" style="max-width:900px; margin-top:30px;">
 
-    <table>
-        <tr>
-            <th>Technology</th>
-            <th>Purpose</th>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Structure</td>
-        </tr>
-        <tr>
-            <td>CSS</td>
-            <td>Design</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Functionality</td>
-        </tr>
-    </table>
+
+
+<div class="card w3-card w3-padding w3-white">
+
+
+<h2>Core Web Concepts</h2>
+
+
+<p>
+HTTP (Hypertext Transfer Protocol) is the foundation of communication
+between web browsers and servers. When a user visits a website, the browser
+sends an HTTP request to a server, and the server responds with the requested
+information.
+</p>
+
+
+<h2>Web Development Technologies</h2>
+
+
+<p>
+HTML, CSS, and JavaScript are the main technologies used to create modern
+websites.
+</p>
+
+
+
+<!-- Technology Table -->
+<table class="w3-table w3-bordered w3-striped">
+
+
+<tr>
+
+<th>
+Technology
+</th>
+
+<th>
+Purpose
+</th>
+
+<th>
+Connection to HTTP
+</th>
+
+</tr>
+
+
+<tr>
+
+<td>
+HTML
+</td>
+
+<td>
+Provides webpage structure and content.
+</td>
+
+<td>
+HTML documents are transferred through HTTP requests.
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+CSS
+</td>
+
+<td>
+Controls webpage design and appearance.
+</td>
+
+<td>
+CSS files are delivered from servers using HTTP.
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+JavaScript
+</td>
+
+<td>
+Adds interactive features and dynamic behavior.
+</td>
+
+<td>
+JavaScript can communicate with servers using HTTP requests.
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+<h2>Important HTTP Concepts</h2>
+
+
+<ul>
+
+<li>
+<b>Client:</b> A device or browser that requests information from a server.
+</li>
+
+
+<li>
+<b>Server:</b> A computer that stores and provides website resources.
+</li>
+
+
+<li>
+<b>HTTP Request:</b> A message sent by a client asking for information.
+</li>
+
+
+<li>
+<b>HTTP Response:</b> The information returned from the server.
+</li>
+
+
+<li>
+<b>Status Codes:</b> Numbers that describe the result of a request, such as 200 (success) or 404 (not found).
+</li>
+
+
+<li>
+<b>HTTPS:</b> The secure version of HTTP that encrypts communication.
+</li>
+
+
+<li>
+<b>Cookies:</b> Small pieces of information stored by websites to remember users.
+</li>
+
+
+<li>
+<b>Cache:</b> Stored copies of resources that improve website loading speed.
+</li>
+
+
+</ul>
+
+
 </div>
+
 
 </main>
 
+
+
+<!-- Footer -->
 <footer>
-    <p>This is a class project for IT 3203</p>
+
+<p>
+This is a class project for IT 3203
+</p>
+
 </footer>
 
+
+
 </body>
+
 </html>
