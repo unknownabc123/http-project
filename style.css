@@ -116,7 +116,6 @@ h3 {
 
 /* =========================
    Content Cards
-   Works with your old HTML
 ========================= */
 
 .card {
@@ -415,7 +414,40 @@ hr {
 
 
 /* =========================
+   Tablet Responsive Design
+   Screen size: 1024px
+========================= */
+
+@media screen and (max-width:1024px) {
+
+
+    .w3-content {
+
+        width: 95%;
+
+    }
+
+
+    .card {
+
+        padding: 20px;
+
+    }
+
+
+    table {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+
+/* =========================
    Mobile Responsive Design
+   Screen size: 768px
 ========================= */
 
 @media screen and (max-width:768px) {
@@ -458,6 +490,17 @@ hr {
         width: 100%;
 
         text-align: left;
+
+    }
+
+
+    /* Makes tables scroll on small screens */
+
+    table {
+
+        display: block;
+
+        overflow-x: auto;
 
     }
 
